@@ -4,15 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
-import Nav from './header';
+import Header from './header';
+import Footer from './footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-      <Nav />
+      <Header />
       <App />
+      <Footer />
     </ChakraProvider>
   </React.StrictMode>
 );
